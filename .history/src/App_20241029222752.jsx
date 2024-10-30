@@ -7,7 +7,7 @@ function App() {
     { id: 1, description: "Shama Lab 04", completed: true },
   ]);
 
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('All'); // New filter state for task view
   
 
   const addTask = (task) => {
@@ -28,7 +28,7 @@ function App() {
   const getFilteredTasks = () => {
       if (filter === 'Completed') return tasks.filter(task => task.completed);
       if (filter === 'Pending') return tasks.filter(task => !task.completed);
-      return tasks;
+      return tasks; // All tasks
   };
 
   return (

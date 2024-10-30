@@ -11,7 +11,7 @@ function TaskForm({ addTask }) {
                 description,
                 completed: false 
             });
-            setDescription(""); 
+            setDescription(""); // reset input
         }
     };
 

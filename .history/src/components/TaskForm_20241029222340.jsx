@@ -7,11 +7,11 @@ function TaskForm({ addTask }) {
         e.preventDefault();
         if (description.trim()) {
             addTask({
-                id: Date.now(), 
+                id: Date.now(), // unique ID for each task
                 description,
-                completed: false 
+                completed: false // default to incomplete
             });
-            setDescription(""); 
+            setDescription(""); // reset input
         }
     };
 

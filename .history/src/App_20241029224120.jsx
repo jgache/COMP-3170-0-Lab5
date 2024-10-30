@@ -28,7 +28,7 @@ function App() {
   const getFilteredTasks = () => {
       if (filter === 'Completed') return tasks.filter(task => task.completed);
       if (filter === 'Pending') return tasks.filter(task => !task.completed);
-      return tasks;
+      return tasks; // All tasks
   };
 
   return (

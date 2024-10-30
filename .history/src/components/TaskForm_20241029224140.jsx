@@ -9,9 +9,9 @@ function TaskForm({ addTask }) {
             addTask({
                 id: Date.now(), 
                 description,
-                completed: false 
+                completed: false // default to incomplete
             });
-            setDescription(""); 
+            setDescription(""); // reset input
         }
     };
 
